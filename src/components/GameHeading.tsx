@@ -10,9 +10,9 @@ const GameHeading = ({ gameQuery }: Props) => {
   const heading = `GameHood ${gameQuery.platform?.name || ''} ${
     gameQuery.genre?.name || ''
   }`;
-  const subHeading = `${gameQuery.platform?.name || ''} ${
+  const subHeading = `${gameQuery.platform?.name  || ''} ${
     gameQuery.genre?.name || ''
-  } Games`;
+  }`;
 
   return (
     <>

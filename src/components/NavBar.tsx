@@ -1,4 +1,4 @@
-import { HStack, Image } from '@chakra-ui/react'
+import { Box, Flex, HStack, Image } from '@chakra-ui/react';
 import logo from '../assets/gamehood.svg';
 import ColorModeSwitch from './ColorModeSwitch';
 import SearchInput from './SearchInput';
@@ -9,12 +9,12 @@ interface Props {
 
 const NavBar = ({ onSearch }: Props) => {
   return (
-    <HStack padding='10px'>
-      <Image src={logo} boxSize='60px' />
-      <SearchInput onSearch={onSearch} />
-      <ColorModeSwitch />
+    <HStack padding="10px">
+        <Image src={logo} boxSize="40px" />
+        <SearchInput onSearch={onSearch} />
+        <ColorModeSwitch />
     </HStack>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

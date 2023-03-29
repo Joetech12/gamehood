@@ -6,8 +6,16 @@ import {
   HStack,
   Show,
   Text,
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  useDisclosure,
 } from '@chakra-ui/react';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import GameGrid from './components/GameGrid';
 import GameHeading from './components/GameHeading';
 import GenreList from './components/GenreList';
@@ -25,6 +33,8 @@ export interface GameQuery {
 }
 
 function App() {
+  
+
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
 
   return (
